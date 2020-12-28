@@ -1,4 +1,7 @@
 # annotatedTransformer
+[Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
+
+
 ## Basic architecture
 - EncoderDecoder (Basically decode(encode(src, tgt)))
   - Encoder
@@ -56,7 +59,7 @@ BN的基本思想其实相当直观：因为深层神经网络在做非线性变
 
 这里面提到“如果都通过BN，那么不就跟把非线性函数替换成线性函数效果相同了？”，其实是因为例如说tanh的0附近是类似线性的。
 
-https://blog.csdn.net/malefactor/article/details/51476961
+[CSDN关于BN的解释](https://blog.csdn.net/malefactor/article/details/51476961)
 
 ### class Encoder Layer
 Encoder Layer是由两个小部分组成，一个是multi-head self attention, 还有一个是position-wise feed-forward, 在经过这俩层时还需要加入一个residual的连接。相当于：
